@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0a66c2; /* Professional LinkedIn-style Blue */
+  --color-secondary: #057642; /* Professional Action Green */
+  --color-slateBg: #f3f2ef; /* Professional off-white background */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Standard corporate radii */
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-slateBg);
+    color: rgba(0, 0, 0, 0.9);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f3f2ef;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3c4ac;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a090;
+}
+
+/* ========================================================================= */
+/* ADMIN THEMES                                                              */
+/* ========================================================================= */
+
+.admin-theme-light {
+  --admin-bg-main: #f8fafc; /* Very light slate for main body */
+  --admin-bg-nav: #ffffff;  /* Pure white for bars and panels */
+  --admin-bg-card: #ffffff; /* White generic cards */
+  --admin-text-primary: #1e293b; /* Dark text */
+  --admin-text-secondary: #64748b; /* Muted text */
+  --admin-border: #e2e8f0;  /* Light border */
+  --admin-hover: #f1f5f9;   /* Hover background */
+}
+
+.admin-theme-dark {
+  --admin-bg-main: #0d1b2e; /* Original dark blue bg */
+  --admin-bg-nav: #0a1628;  /* Original dark navbar bg */
+  --admin-bg-card: #0a1628; /* Original dark card bg */
+  --admin-text-primary: #ffffff; /* White text */
+  --admin-text-secondary: #94a3b8; /* Slate-400 equivalent */
+  --admin-border: #1e293b; /* Slate-800 equivalent or slightly lighter */
+  --admin-hover: #1e293b;   /* Slate-800 equivalent */
+}
+
+.admin-theme-black {
+  --admin-bg-main: #000000; /* Pure black */
+  --admin-bg-nav: #09090b;  /* Zinc-950 */
+  --admin-bg-card: #09090b;
+  --admin-text-primary: #ffffff;
+  --admin-text-secondary: #a1a1aa; /* Zinc-400 */
+  --admin-border: #27272a;  /* Zinc-800 */
+  --admin-hover: #18181b;   /* Zinc-900 */
+}
+
