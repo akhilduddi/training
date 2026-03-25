@@ -32,7 +32,7 @@ const Home = () => {
       <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-8 py-12 md:py-24 flex flex-col md:flex-row items-center gap-12">
         <div className="flex-1 w-full text-left">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 mb-6 font-sans tracking-tight leading-[1.1]">
-            Welcome to <span className="text-primary">(cGxP).Directory</span>
+            Welcome to <span className="text-primary">(cGxP) Directory</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 tracking-tight">
             An Encyclopedia of Life Science Companies.
